@@ -1,0 +1,52 @@
+whisper_base:
+  type: transcription
+  library: whisper
+  size: base
+  model_path: models/whisper/base.pt
+  device: cuda  # or cpu
+  language: en
+  chunk_length: 1800  # 30 minutes in seconds
+
+vosk:
+  type: transcription
+  language_model: en-us
+  model_path: models/vosk/vosk-model-small-en-us-0.15
+
+bart:
+  type: summarization
+  model_path: models/bart
+  model_name: facebook/bart-large-cnn
+  max_length: 1024
+  min_length: 128
+  device: cuda  # or cpu
+
+t5:
+  type: summarization
+  model_path: models/t5
+  model_name: t5-base
+  max_length: 512
+  min_length: 64
+  device: cuda  # or cpu
+
+pegasus:
+  type: summarization
+  model_path: models/pegasus
+  model_name: google/pegasus-xsum
+  max_length: 512
+  min_length: 64
+  device: cuda  # or cpu
+
+gpt2:
+  type: text_generation
+  model_path: models/gpt2
+  model_name: gpt2
+  max_length: 1024
+  device: cuda  # or cpu
+
+mt5:
+  type: summarization
+  model_path: models/mt5
+  model_name: google/mt5-small
+  max_length: 512
+  min_length: 64
+  device: cuda  # or cpu

@@ -1,0 +1,19 @@
+# Core ML packages
+torch==2.0.1
+transformers==4.30.2
+openai-whisper==20230314
+vosk==0.3.45
+triton==2.0.0  # Required for Whisper
+pytube>=15.0.0
+ffmpeg-python>=0.2.0
+pyyaml>=6.0
+numpy>=1.24.0
+pandas>=2.0.0
+networkx>=3.1  # for mindmap generation
+graphviz>=0.20.1  # for mindmap visualization
+python-dotenv>=1.0.0
+requests>=2.31.0
+tqdm>=4.65.0
+nltk>=3.8.1
+wget>=3.2  # for downloading models
+sentencepiece>=0.1.99  # required for MT5 tokenization

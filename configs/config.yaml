@@ -1,0 +1,14 @@
+video_source: local  # Can be: local, youtube, redentias
+video_url: ""  # For YouTube or Redentias URLs
+models:
+  transcription: 
+    - whisper_base
+    - vosk
+  summarization:
+    - bart
+    - t5
+output_format:
+  transcript: txt
+  summary: md
+  mindmap: png
+log_dir: data/outputs/logs/
